@@ -40,7 +40,7 @@ anywhere in that function including inside other blocks
 ({}) in the function.
 */
 
-// let has BLOCK SCOPE, meaning:
+// let has BLOCK SCOPE, meaning
 /*
 If a let is defined in a block, it can only be accessed
 inside that block.
@@ -56,7 +56,7 @@ for (let i = 10; i > 0; i--) {
 	console.log(i);
 }
 
-// 3 parts of a for loop:
+// 3 parts of a for loop
 /*
 counting var;
 condition under which loop continues;

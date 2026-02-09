@@ -33,8 +33,8 @@ function h() {
 
 h(3,4);
 
-// var has FUNCTION SCOPE, meaning:
-/*
+// var has FUNCTION SCOPE, meaning
+
 If a var is defined in a function, it can be accessed
 anywhere in that function including inside other blocks
 ({}) in the function.

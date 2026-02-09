@@ -1,0 +1,134 @@
+// Javacript review
+
+// Multiline comment
+/*
+This is a multiline comment.
+It really is!
+*/
+
+// VARIABLES
+
+let y;  // variable DECLARATION
+y = 20; // variable INITIALIZATION
+y = 4;  // SETTING a variable
+
+let y = 20; // declaring and initializing in 1 step
+
+const x = 10; // READ-ONLY variable declaration
+
+var q;  // variable DECLARATION
+q = 20; // variable INITIALIZATION
+q = 4;  // SETTING a variable
+
+// VARIABLE SCOPE
+
+function h() {
+	var p = "cat";
+	for (let i = 0; i < 10; i++) {
+		console.log(i);
+		console.log(p);
+	}
+	//console.log(i); //error because i is out of scope
+}
+
+h(3,4);
+
+// var has FUNCTION SCOPE, meaning:
+/*
+If a var is defined in a function, it can be accessed
+anywhere in that function including inside other blocks
+({}) in the function.
+*/
+
+// let has BLOCK SCOPE, meaning:
+/*
+If a let is defined in a block, it can only be accessed
+inside that block.
+*/
+
+// FOR LOOP
+
+for (let i = 0; i < 10; i = i+1*2) {
+	console.log(i);
+}
+
+for (let i = 10; i > 0; i--) {
+	console.log(i);
+}
+
+// 3 parts of a for loop:
+/*
+counting var;
+condition under which loop continues;
+modification of counting var
+*/
+
+// WHILE LOOP
+
+let i = 0;
+while (i < 10) {
+	console.log(i);
+	i++;
+}
+
+/* EXAMPLE OF COMMON USE OF WHILE LOOP
+let shooting = false;
+
+while (shooting) {
+	fire_bullets();
+}
+*/
+
+// ARRAYS
+
+let a = [4,5,6];
+a[0]; // => 4 (array access by index - zero based)
+a[2]; // => 6 (array access)
+
+let b = ["cat", "dog", "fish"];
+
+let c = ["cat", 100, true, 'hi'];
+
+c.push('hi'); // adds items to the end of an array
+
+// looping over an array to get each value
+for (let i = 0; i < c.length; i++) {
+	console.log(c[i]);
+}
+
+// COMPARISON OPERATORS
+
+let x = 2;
+x == 2;
+x != 2;
+x < 2;
+x > 2;
+x <= 2;
+x >= 2;
+
+x = 1;
+x === 1;
+x === true; // is strict - types and values must be the same
+x == true; // does type casting in certain cases
+
+// CONDITIONALS
+
+if (x == 1) {
+	console.log("it is one!");
+}
+
+if (x != 1) {
+	console.log("it is one!");
+} else {
+	console.log("it is NOT NOT one!");
+}
+
+x = 3;
+
+if (x == 1) {
+	console.log("it is one!");
+} else if (x == 2) {
+	console.log("it is two!");
+} else if (x == 3) {
+	console.log("it is three!");
+}
